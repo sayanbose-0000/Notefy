@@ -1,0 +1,1 @@
+Notefy is a basic notetaking app that remembers that notes even on page reload

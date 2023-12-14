@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #222;
+}
+
+.createNote>h1 {
+    color: rgb(226, 170, 15);
+    text-decoration: underline;
+}
+
+.createNote {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.createNote>button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: 2px dashed black;
+    outline-offset: -4px;
+    background-color: rgb(129, 218, 129);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noteArea {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes {
+    font-family: 'Poppins', sans-serif;
+    min-width: 40vw;
+    max-width: 80vw;
+    outline: 2px dashed black;
+    outline-offset: -4px;
+    padding: 1rem;
+    background-color: rgb(129, 171, 218);
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.noteBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteNote {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(243, 58, 34);
+    font-size: 1rem;
+    font-weight: bold;
+    outline: 2px dashed black;
+    outline-offset: -4px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+@media only screen and (min-width:0px) and (max-width:800px) {
+    .notes {
+        min-width: 60vw;
+        max-width: 60vw;
+    }
+
+    deleteNote {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
